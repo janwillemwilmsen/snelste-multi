@@ -3,17 +3,17 @@ json =
 	{
 	  name:"FCB",
 	  url:"https://fcbarcelona.com/",
-	  slug:"fcb"
+	  slug:"/fcb"
 	},	
 	{
 	  name:"PSG",
 	  url:"https://psg.fr/",
-	  slug:"psg"
+	  slug:"/psg"
 	},
 	{
 		name:"RMD",
 		url:"https://www.realmadrid.com/en",
-		// slug:"rmd"
+		slug:"https://google.nl"
 	  }
 ]
 

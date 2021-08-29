@@ -14,6 +14,12 @@ counts:
   perfect: 0
   total: 0
 ---
+
+ 
+{% include "header.njk" %}
+
+
+
 <div class="leaderboard-wrapper">
 	<table class="leaderboard">
 		<thead>
@@ -49,7 +55,7 @@ counts:
 					<br><br> 
 					
 					{%- if  site[newestKey].slug %}
-					More:  <a href="/{{site[newestKey].slug }}">  {{site[newestKey].slug }}  </a>
+					More:  <a href="{{site[newestKey].slug }}">  {{site[newestKey].slug }}  </a>
 					{%- endif %}
 				</td>
 			{%- if site[newestKey].error %}

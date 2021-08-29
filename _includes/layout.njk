@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Speedlify</title>
+		<title>{{ sites[vertical].description }}</title>
 		<meta name="description" content="Benchmark web pages over time.">
 		<link rel="stylesheet" href="{{ '/style.css' | url }}">
 		<script>
@@ -25,9 +25,8 @@
 
 		{{ content | safe }}
 
-		<footer>
-			MIT licensed. Read <a href="https://www.zachleat.com/web/speedlify/">the blog post</a>. Source code on <a href="https://github.com/zachleat/speedlify/">GitHub</a>. Created by <a href="https://www.zachleat.com/">@zachleat</a>.
-		</footer>
+
+{% include "footer.njk" %}
 
 		<script defer src="{{ '/chartist.js' | url }}"></script>
 		<script defer src="{{ '/script.js' | url }}"></script>

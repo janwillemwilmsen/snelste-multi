@@ -2,6 +2,7 @@ module.exports = {
 	name: "fcb", // optional, falls back to object key
 	description: "FC Barcelona get tested",
 	hide:true,
+	levelup: "soccer-websites",
 	options: {
 		frequency: 60 * 23, // (in minutes), 23 hours
 	},
