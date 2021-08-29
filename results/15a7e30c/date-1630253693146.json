@@ -1,0 +1,51 @@
+{
+  "url": "https://ads.google.com/intl/en_nl/home/",
+  "requestedUrl": "https://www.google.com/intl/en_nl/ads/",
+  "timestamp": 1630253801888,
+  "ranks": {
+    "hundos": 2,
+    "performance": 2,
+    "accessibility": 2,
+    "cumulative": 2
+  },
+  "lighthouse": {
+    "version": "8.3.0",
+    "performance": 0.41,
+    "accessibility": 0.91,
+    "bestPractices": 0.8,
+    "seo": 1,
+    "total": 312
+  },
+  "firstContentfulPaint": 3496.8289999999997,
+  "firstMeaningfulPaint": 4033.1229999999996,
+  "speedIndex": 3496.8289999999997,
+  "largestContentfulPaint": 4719.4169999999995,
+  "totalBlockingTime": 640,
+  "cumulativeLayoutShift": 0.48125,
+  "timeToInteractive": 8785.615999999998,
+  "maxPotentialFirstInputDelay": 339,
+  "timeToFirstByte": 16.641999999999996,
+  "weight": {
+    "summary": "52 requests • 1,018 KiB",
+    "total": 1042163,
+    "image": 429022,
+    "imageCount": 8,
+    "script": 440177,
+    "scriptCount": 21,
+    "document": 22703,
+    "font": 102828,
+    "fontCount": 10,
+    "stylesheet": 41786,
+    "stylesheetCount": 2,
+    "thirdParty": 849340,
+    "thirdPartyCount": 39
+  },
+  "run": {
+    "number": 1,
+    "total": 1
+  },
+  "axe": {
+    "passes": 832,
+    "violations": 15
+  }
+}

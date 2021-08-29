@@ -1,0 +1,51 @@
+{
+  "url": "https://www.google.com/",
+  "requestedUrl": "https://www.google.com/",
+  "timestamp": 1630250786948,
+  "ranks": {
+    "hundos": 1,
+    "performance": 1,
+    "accessibility": 1,
+    "cumulative": 1
+  },
+  "lighthouse": {
+    "version": "8.3.0",
+    "performance": 1,
+    "accessibility": 0.98,
+    "bestPractices": 0.87,
+    "seo": 0.83,
+    "total": 368
+  },
+  "firstContentfulPaint": 1177.4850000000001,
+  "firstMeaningfulPaint": 1235.4850000000001,
+  "speedIndex": 1177.4850000000001,
+  "largestContentfulPaint": 1235.4850000000001,
+  "totalBlockingTime": 29.5,
+  "cumulativeLayoutShift": 0,
+  "timeToInteractive": 2834.3525,
+  "maxPotentialFirstInputDelay": 76,
+  "timeToFirstByte": 128.879,
+  "weight": {
+    "summary": "14 requests • 198 KiB",
+    "total": 202320,
+    "image": 23336,
+    "imageCount": 5,
+    "script": 97597,
+    "scriptCount": 2,
+    "document": 50640,
+    "font": 29896,
+    "fontCount": 2,
+    "stylesheet": 733,
+    "stylesheetCount": 1,
+    "thirdParty": 95333,
+    "thirdPartyCount": 6
+  },
+  "run": {
+    "number": 1,
+    "total": 1
+  },
+  "axe": {
+    "passes": 291,
+    "violations": 11
+  }
+}
