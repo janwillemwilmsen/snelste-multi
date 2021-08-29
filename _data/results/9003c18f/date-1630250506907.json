@@ -1,0 +1,51 @@
+{
+  "url": "https://duckduckgo.com/hiring",
+  "requestedUrl": "https://duckduckgo.com/hiring",
+  "timestamp": 1630250520057,
+  "ranks": {
+    "hundos": 1,
+    "performance": 1,
+    "accessibility": 1,
+    "cumulative": 1
+  },
+  "lighthouse": {
+    "version": "8.3.0",
+    "performance": 0.71,
+    "accessibility": 0.9,
+    "bestPractices": 0.87,
+    "seo": 0.9,
+    "total": 338
+  },
+  "firstContentfulPaint": 3302.9880000000003,
+  "firstMeaningfulPaint": 3302.9880000000003,
+  "speedIndex": 6041.060815897004,
+  "largestContentfulPaint": 4573.988,
+  "totalBlockingTime": 104,
+  "cumulativeLayoutShift": 0,
+  "timeToInteractive": 3527.9880000000003,
+  "maxPotentialFirstInputDelay": 229,
+  "timeToFirstByte": 65.596,
+  "weight": {
+    "summary": "20 requests • 676 KiB",
+    "total": 691754,
+    "image": 186889,
+    "imageCount": 2,
+    "script": 288507,
+    "scriptCount": 8,
+    "document": 14008,
+    "font": 108437,
+    "fontCount": 5,
+    "stylesheet": 76972,
+    "stylesheetCount": 2,
+    "thirdParty": 0,
+    "thirdPartyCount": 0
+  },
+  "run": {
+    "number": 1,
+    "total": 1
+  },
+  "axe": {
+    "passes": 675,
+    "violations": 80
+  }
+}

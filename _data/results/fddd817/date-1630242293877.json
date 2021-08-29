@@ -1,0 +1,51 @@
+{
+  "url": "https://www.psg.fr/psg-tv",
+  "requestedUrl": "https://www.psg.fr/psg-tv",
+  "timestamp": 1630242814492,
+  "ranks": {
+    "hundos": 1,
+    "performance": 1,
+    "accessibility": 1,
+    "cumulative": 1
+  },
+  "lighthouse": {
+    "version": "8.3.0",
+    "performance": 0.34,
+    "accessibility": 0.86,
+    "bestPractices": 0.73,
+    "seo": 0.99,
+    "total": 292
+  },
+  "firstContentfulPaint": 2747.4970000000003,
+  "firstMeaningfulPaint": 4008.493,
+  "speedIndex": 7499.666402139307,
+  "largestContentfulPaint": 8217.7695,
+  "totalBlockingTime": 926.5,
+  "cumulativeLayoutShift": 0,
+  "timeToInteractive": 16744.137499999997,
+  "maxPotentialFirstInputDelay": 589,
+  "timeToFirstByte": 45.736000000000004,
+  "weight": {
+    "summary": "71 requests • 3,193 KiB",
+    "total": 3269985,
+    "image": 1553010,
+    "imageCount": 35,
+    "script": 1282656,
+    "scriptCount": 20,
+    "document": 163727,
+    "font": 108954,
+    "fontCount": 4,
+    "stylesheet": 152003,
+    "stylesheetCount": 1,
+    "thirdParty": 1523013,
+    "thirdPartyCount": 43
+  },
+  "run": {
+    "number": 3,
+    "total": 3
+  },
+  "axe": {
+    "passes": 1957,
+    "violations": 47
+  }
+}

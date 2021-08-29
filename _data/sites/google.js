@@ -1,6 +1,7 @@
 module.exports = {
-	name: "SSG", // optional, falls back to object key
-	description: "Static Site Generator web sites",
+	name: "Google.com", // optional, falls back to object key
+	description: "Google Website",
+	hide:true,
 	// skip if localhost
 	// skip if this is a new fork of the speedlify (not Zach’s)
 	skip: false, // !process.env.CONTEXT || process.env.SITE_NAME !== "speedlify",
@@ -13,17 +14,13 @@ module.exports = {
 		freshChrome: "run"
 	},
 	urls: [
-		"https://www.11ty.dev/",
-		"https://www.gatsbyjs.com/",
-		"https://gohugo.io/",
-		"https://nextjs.org/",
-		"https://nuxtjs.org/",
-		"https://gridsome.org/",
-		"https://vuepress.vuejs.org/",
-		"https://v2.docusaurus.io/",
-		"https://docsify.js.org/",
-		"https://jekyllrb.com/",
-		"https://hexo.io/",
-		"https://sapper.svelte.dev/",
+		"https://www.google.com/services/",
+		"https://www.google.com/intl/en_nl/ads/",
+	
 	]
 };
+
+
+// LINKS description:
+// Google Services
+// Google Advertising

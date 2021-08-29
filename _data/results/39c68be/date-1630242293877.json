@@ -1,0 +1,51 @@
+{
+  "url": "https://www.fcbarcelona.com/en/tickets/football",
+  "requestedUrl": "https://www.fcbarcelona.com/en/tickets/football",
+  "timestamp": 1630242403229,
+  "ranks": {
+    "hundos": 1,
+    "performance": 2,
+    "accessibility": 1,
+    "cumulative": 1
+  },
+  "lighthouse": {
+    "version": "8.3.0",
+    "performance": 0.26,
+    "accessibility": 0.9,
+    "bestPractices": 0.8,
+    "seo": 0.81,
+    "total": 277
+  },
+  "firstContentfulPaint": 2655.0190000000002,
+  "firstMeaningfulPaint": 2655.0190000000002,
+  "speedIndex": 8644.289381378852,
+  "largestContentfulPaint": 20973.969000000005,
+  "totalBlockingTime": 1687,
+  "cumulativeLayoutShift": 0,
+  "timeToInteractive": 20857.160000000003,
+  "maxPotentialFirstInputDelay": 477,
+  "timeToFirstByte": 166.332,
+  "weight": {
+    "summary": "115 requests • 3,768 KiB",
+    "total": 3858815,
+    "image": 2212678,
+    "imageCount": 29,
+    "script": 809336,
+    "scriptCount": 40,
+    "document": 56393,
+    "font": 205269,
+    "fontCount": 5,
+    "stylesheet": 154631,
+    "stylesheetCount": 1,
+    "thirdParty": 651487,
+    "thirdPartyCount": 76
+  },
+  "run": {
+    "number": 1,
+    "total": 3
+  },
+  "axe": {
+    "passes": 3069,
+    "violations": 44
+  }
+}
