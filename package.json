@@ -6,8 +6,11 @@
   "scripts": {
     "clean": "rm -rf _data/results/* && rm -rf .log && rm -rf _site",
     "test-pages": "node run-tests",
+    "watch:tw": "npx tailwindcss -i ./assets/tailwind-all.css -o ./assets/tailwind-purged.css  -w",
     "build": "npx @11ty/eleventy --quiet",
     "start": "npx @11ty/eleventy --quiet --serve",
+    "power": "npm-run-all --parallel start watch:tw",
+    "power2": "concurrently \"npm:start\" \"npm:watch:tw\"",
     "zip-results": "node zip-results.js",
     "build-production": "npm run test-pages && npm run build && npm run zip-results"
   },
@@ -30,17 +33,23 @@
   },
   "homepage": "https://github.com/zachleat/speedlify#readme",
   "dependencies": {
-    "@11ty/eleventy": "0.11.0",
+    "@11ty/eleventy": "^0.12.1",
     "@11ty/eleventy-cache-assets": "^2.0.3",
+    "autoprefixer": "^10.3.3",
     "byte-size": "^7.0.0",
     "chartist": "^0.11.4",
     "cross-zip": "^3.1.0",
+    "cssnano": "^5.0.5",
     "dotenv": "^8.2.0",
     "fast-glob": "^3.2.4",
     "lodash": "^4.17.15",
     "node-fetch": "^2.6.0",
+    "npm-run-all": "^4.1.5",
     "performance-leaderboard": "^5.2.0",
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.3.1",
     "short-hash": "^1.0.0",
-    "speedlify-score": "^1.0.2"
+    "speedlify-score": "^1.0.2",
+    "tailwindcss": "^2.2.7"
   }
 }

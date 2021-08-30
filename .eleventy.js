@@ -218,25 +218,52 @@ module.exports = function(eleventyConfig) {
 
 
 
-eleventyConfig.addFilter("getSites", (results, sites, vertical, skipKeys = []) => {
-		let urls = sites[vertical].urls;
-		let slugs = {}
-		urls.forEach((url,i)=>{
-			if(sites[vertical].slugs) slugs[url]=sites[vertical].slugs[i]
-		})
-		console.log(slugs)
-		let isIsolated = sites[vertical].options && sites[vertical].options.isolated === true;
-		let prunedResults = isIsolated ? results[vertical] : results;
-		let output = filterResultsToUrls(prunedResults, urls, skipKeys)
-		output.forEach((item,i)=>{
-			Object.keys(item).forEach(key=>{
-				slug = slugs[item[key].requestedUrl]
-				if (slug) item[key].slug=slug
-			})
+// eleventyConfig.addFilter("getSites", (results, sites, vertical, skipKeys = []) => {
+// 		let urls = sites[vertical].urls;
+// 		let slugs = {}
+// 		urls.forEach((url,i)=>{
+// 			if(sites[vertical].slugs) slugs[url]=sites[vertical].slugs[i]
+// 		})
+// 		console.log(slugs)
+// 		let isIsolated = sites[vertical].options && sites[vertical].options.isolated === true;
+// 		let prunedResults = isIsolated ? results[vertical] : results;
+// 		let output = filterResultsToUrls(prunedResults, urls, skipKeys)
+// 		output.forEach((item,i)=>{
+// 			Object.keys(item).forEach(key=>{
+// 				slug = slugs[item[key].requestedUrl]
+// 				if (slug) item[key].slug=slug
+// 			})
 
+// 		})
+// 		return output;
+// 	});
+
+
+
+eleventyConfig.addFilter("getSites", (results, sites, vertical, skipKeys = []) => {
+	let urls = sites[vertical].urls;
+	let slugs = {}
+	let newnames = {}
+	urls.forEach((url,i)=>{
+		if(sites[vertical].slugs) slugs[url]=sites[vertical].slugs[i]
+		if(sites[vertical].newnames) newnames[url]=sites[vertical].newnames[i]
+	})
+	let isIsolated = sites[vertical].options && sites[vertical].options.isolated === true;
+	let prunedResults = isIsolated ? results[vertical] : results;
+	let output = filterResultsToUrls(prunedResults, urls, skipKeys)
+	output.forEach((item,i)=>{
+		Object.keys(item).forEach(key=>{
+			slug = slugs[item[key].requestedUrl]
+			newname = newnames[item[key].requestedUrl]
+			if (slug) item[key].slug=slug
+			if (newname) item[key].newname=newname
 		})
-		return output;
-	});
+
+	})
+	return output;
+});
+
+
 
 
 
@@ -339,9 +366,12 @@ eleventyConfig.addFilter("getSites", (results, sites, vertical, skipKeys = []) =
 	eleventyConfig.addPassthroughCopy({
 		"./node_modules/chartist/dist/chartist.js": "chartist.js",
 		"./node_modules/chartist/dist/chartist.css.map": "chartist.css.map",
+		// "./assets/tailwind-purged.css": "tailwind-purged.css",
 	});
 
-	eleventyConfig.addWatchTarget("./assets/");
+	// eleventyConfig.addWatchTarget("./assets/");
+	// uitgezet vanwege Tailwind
+
 
 	eleventyConfig.setBrowserSyncConfig({
 		ui: false,

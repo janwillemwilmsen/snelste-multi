@@ -21,7 +21,7 @@ counts:
 
 
 <div class="leaderboard-wrapper">
-	<table class="leaderboard">
+	<table class="leaderboard bg-red-500">
 		<thead>
 			<tr>
 				<th>Rank</th>
@@ -52,11 +52,13 @@ counts:
 				<td class="leaderboard-url"><a href="{{ site[newestKey].url }}"><code class="url">{{ site[newestKey].url | displayUrl(hasRedirect) }}</code></a>
 					{%- if hasRedirect %}<span class="leaderboard-redirect-warn">Redirect from <code class="url">{{ site[newestKey].requestedUrl | displayUrl(true) }}</code></span>{% endif -%}
 					{%- if site[newestKey].error %}<span class="leaderboard-redirect-error">Error</span>{% endif -%}
-					<br><br> 
+					
 					
 					{%- if  site[newestKey].slug %}
-					More:  <a href="{{site[newestKey].slug }}">  {{site[newestKey].slug }}  </a>
+					<br>
+					More:  <a href="{{site[newestKey].slug }}">  {{site[newestKey].newname }} </a>
 					{%- endif %}
+					
 				</td>
 			{%- if site[newestKey].error %}
 				<td colspan="2"></td>

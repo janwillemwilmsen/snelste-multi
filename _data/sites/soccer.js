@@ -1,17 +1,17 @@
 json = 
 [
 	{
-	  name:"FCB",
+	  newname:"FCB",
 	  url:"https://fcbarcelona.com/",
 	  slug:"/fcb"
 	},	
 	{
-	  name:"PSG",
+	  newname:"PSG",
 	  url:"https://psg.fr/",
 	  slug:"/psg"
 	},
 	{
-		name:"RMD",
+		newname:"RMD",
 		url:"https://www.realmadrid.com/en",
 		slug:"https://google.nl"
 	  }
@@ -35,7 +35,7 @@ module.exports = {
 	},
 
 	urls: json.map(el=>el.url),
-	names: json.map(el=>el.name),
+	newnames: json.map(el=>el.newname),
 	slugs: json.map(el=>el.slug)
 
 	// urls: [

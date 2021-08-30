@@ -1,0 +1,39 @@
+---
+permalink: /sitemap.xml
+eleventyExcludeFromCollections: true
+site:
+  url: URL-HERE/
+  url2: 
+---
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<url>
+            <loc>/</loc>
+            <lastmod>{{ page.date.toISOString() }}</lastmod>
+        </url>
+
+  {%- for key, category in sites %}
+		{# {%- if not category.hide %} #}
+        <url>
+            <loc>{{ site.url }}{{ category.name  | lower | slug }}</loc>
+            <lastmod>{{ page.date.toISOString() }}</lastmod>
+        </url>
+        	{# {%- endif %} #}
+    {% endfor %}
+
+
+
+{% set postslist = collections.posts | reverse %}
+
+  {%- for post in postslist %}
+		{# {%- if not category.hide %} #}
+        <url>
+            <loc>{{ site.url2 }}{{ post.url | lower  }}</loc>
+            <lastmod>{{ page.date.toISOString() }}</lastmod>
+        </url>
+        	{# {%- endif %} #}
+    {% endfor %}
+
+
+</urlset>
